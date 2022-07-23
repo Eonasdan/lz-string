@@ -1,7 +1,7 @@
 {
-  "name": "lz-string",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@eonasdan/lz-string",
+  "version": "1.0.2",
+  "description": "Compress and decompress string with javascript.",
   "main": "dist/lz-string.js",
   "module": "dist/jlz-string.esm.js",
   "scripts": {

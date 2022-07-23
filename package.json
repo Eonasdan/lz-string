@@ -1,0 +1,40 @@
+{
+  "name": "lz-string",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/lz-string.js",
+  "module": "dist/jlz-string.esm.js",
+  "scripts": {
+    "test": "npm run rollup && jiti tests/index.spec.ts",
+    "rollup": "del-cli -f dist && rollup -c ./build/rollup.config.js",
+    "rollup-watch": "rollup -c ./build/rollup.config.js -w",
+    "node-test": "npm run rollup && node tests/node-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eonasdan/lz-string.git"
+  },
+  "author": {
+    "name": "Jonathan Peterson"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eonasdan/lz-string/issues"
+  },
+  "homepage": "https://github.com/Eonasdan/lz-string#readme",
+  "files": [
+    "dist",
+    "src/index.ts"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "del-cli": "^5.0.0",
+    "jiti": "^1.14.0",
+    "prettier": "^2.7.1",
+    "rollup": "^2.77.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "uvu": "^0.5.6"
+  }
+}
